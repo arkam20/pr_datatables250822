@@ -1,0 +1,26 @@
+{
+  "name": "pr_datatables250822",
+  "version": "1.0.0",
+  "description": "Archivo de prueba",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkam20/pr_datatables250822.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkam20/pr_datatables250822/issues"
+  },
+  "homepage": "https://github.com/arkam20/pr_datatables250822#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  }
+}
