@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso Datatables</title>
 
-    <!--Se carga datatables-->
-    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <!--Se cargan las librerias de datatables-->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
 </head>
 <body>
         <h1>Datatables</h1>
 
-
+<!--Poblar tabla con base de datos-->
 <table id="myTable" class="display" cellspacing="0" width="100%">
     <thead>
     <tr>
@@ -116,9 +116,13 @@
     </tbody>
     </table>
 
+        <!-- Poblac con informacion estatica-->
         <script>
             $(document).ready( function () {
-            $('#myTable').DataTable();
+            $('#myTable').DataTable({
+                paging: false,
+                info: false
+            });
             } );
         </script>
     
